@@ -17,16 +17,22 @@ Este projeto é um site de venda de hambúrgueres desenvolvido como parte de um 
     - Implementação de boas práticas de SEO e acessibilidade básica para garantir melhor visibilidade em motores de busca e uma experiência de usuário inclusiva.
 ## Ferramentas Utilizadas
 **HTML5:** Para estruturar o conteúdo do site.
+
 **CSS3:** Customização de estilos junto com o Bootstrap.
+
 **Bootstrap:** Framework CSS para estilização rápida e responsiva.
+
 **JavaScript:** Para interatividade básica e funcionalidades dinâmicas.
+
 **Git:** Versionamento de código.
+
 **GitHub:** Repositório para armazenar e compartilhar o projeto.
+
 ## Backlog
-    - Integração com sistema de pedidos: Futuramente, será integrado um sistema que permita aos usuários fazer pedidos diretamente pelo site.
-    - Melhoria na experiência do usuário (UX): Implementação de animações e transições mais suaves para melhorar a interatividade.
-    - Sistema de avaliação de hambúrgueres: Adicionar uma seção de avaliações para que os clientes possam classificar os produtos.
-    - Integração com API de pagamento: Automação do processo de pagamento online através de APIs como PayPal ou Stripe.
+- Integração com sistema de pedidos: Futuramente, será integrado um sistema que permita aos usuários fazer pedidos diretamente pelo site.
+- Melhoria na experiência do usuário (UX): Implementação de animações e transições mais suaves para melhorar a interatividade.
+- Sistema de avaliação de hambúrgueres: Adicionar uma seção de avaliações para que os clientes possam classificar os produtos.
+- Integração com API de pagamento: Automação do processo de pagamento online através de APIs como PayPal ou Stripe.
 ## Conclusão
 Este projeto proporcionou uma excelente oportunidade para explorar o Bootstrap e praticar versionamento com Git. Foi possível criar um site de vendas funcional com uma interface agradável e responsiva. O próximo passo será aprimorar as funcionalidades e integrar novos recursos para tornar o site mais completo e interativo.
 
