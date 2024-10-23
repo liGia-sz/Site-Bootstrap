@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Pedido - IRIS LANCHES</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!--Folha de estilo bootstrap-->
+        <link rel="stylesheet" href="style.css"> <!-- Folha de estilo local -->
+    </head>
+
+    <body>
+        <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+        </style>
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item active"><a href="index.html">Principal</a></li>
+        <li class="breadcrumb-item active"><a href="produtos.html">Produtos</a></li>
+        <li class="breadcrumb-item" aria-current="page">Pedido</li>
+
+            <!-- Imagem da Logo -->
+        <div class="text-center mt-4">
+            <img src="img/logo IRIS LACHES.png" alt="Logo" style="height: 250px;"> 
+        </div>
+    
+        <!--FORM PARA FAZER O PEDIDO-->
+        <div class="container mt-5">
+            <h1>Faça seu Pedido</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="quantidade" class="form-label"><p class="subtitulo">Nos diga a quantidade de lanches. Clique nas setas ao lado</p></label>
+                    <input type="number" class="form-control" id="quantidade" value="1" min="1" required>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="molhos" class="form-label"><p class="subtitulo">Escolha 6 molhos. (Segure Ctrl para selecionar múltiplos molhos.)</p></label>
+                    <select class="form-control" id="molhos" required>
+                        <option value="maionese">Maionese</option>
+                        <option value="ketchup">Ketchup</option>
+                        <option value="mostarda">Mostarda</option>
+                        <option value="barbecue">Barbecue</option>
+                        <option value="pimenta">Pimenta</option>
+                        <option value="aioli">Aioli</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="carnes" class="form-label"><p class="subtitulo">Escolha 3 carnes</p></label>
+                    <select class="form-control" id="carnes" required>
+                        <option value="carne-suculenta">Carne Suculenta</option>
+                        <option value="frango">Frango</option>
+                        <option value="vegetariana">Linguiça Toscana</option>
+                        <option value="vegetariana">Peixe Empanado</option>
+                        <option value="vegetariana">Vegetariana</option>
+                    </select>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="detalhes" class="form-label"><p class="subtitulo">Deseja retirar algum ingrediente?</p></label>
+                    <textarea class="form-control" id="detalhes" rows="3" placeholder="Escreva aqui qualquer detalhe adicional..."></textarea>
+                </div>
+    
+                <button type="submit" class="btn btn-primary">Enviar Pedido</button> <!--ADICIONAR TOAST-->
+            </form>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+</html>
