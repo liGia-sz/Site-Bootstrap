@@ -1,20 +1,21 @@
-
-/*FORMATÇÃO BODY*/
+/* FORMATÇÃO BODY INICIAL */
 body {
     margin: 0;
     height: 100vh;
-    background-image: url('Background1.jpeg');
+    background-image: url('img/Background1.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-/*FORMATAÇÃO BARRA DE NAVEGAÇÃO*/
+
+
+/* FORMATAÇÃO BARRA DE NAVEGAÇÃO */
 .navbar {
-    text-decoration: none; /* Remove o sublinhado dos links */
+    text-decoration: none; /*Remove o sublinhado dos links*/
 }
 
-/*FORMATÇÃO TEXTO INICIAL*/
+/* FORMATÇÃO TEXTO INICIAL */
 h1, h4 {
     color: white; /* Cor do texto no corpo */
     text-align: left; 
@@ -25,11 +26,11 @@ h1, h4 {
     .overlay-image {
         top: 100%; /* Centraliza verticalmente */
         left: 100%; /* Centraliza horizontalmente */
-        transform: translate(1%, 60%); /* Centraliza a imagem */
-        width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
+        transform: translate(-30%, 20%); /* Centraliza a imagem */
+        width: 700px; /* Ajuste o tamanho da imagem conforme necessário */
     }
 
     #text-initial{ /*FORMATAÇÃO TEXTO PÁGINA INICIAL*/
-        padding-top: 300px;
+        padding-top: 200px;
         padding-left: 250px;
     }
