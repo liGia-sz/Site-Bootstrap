@@ -1,4 +1,4 @@
-/* FORMATÇÃO BODY INICIAL */
+/* FORMATA BODY INICIAL */
 body {
     margin: 0;
     height: 100vh;
@@ -8,13 +8,13 @@ body {
     background-position: center;
 }
 
-/* FORMATAÇÃO BARRA DE NAVEGAÇÃO */
+/* FORMATA BARRA DE NAVEGAÇÃO */
 .navbar {
     text-decoration: none; /*Remove o sublinhado dos links*/
     font-size: large;
 }
 
-/* FORMATÇÃO TEXTO INICIAL */
+/* FORMATA TEXTO INICIAL */
 h1, h4, h6 {
     color: white; /* Cor do texto no corpo */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -22,11 +22,12 @@ h1, h4, h6 {
     margin-top: 0px; /* Espaçamento acima do texto */
 }
 
-p{
+/* FORMATA TEXTO DOS CARDS "QUEM SOMOS" */
+p{ 
     color:black;
 }
 
-    /*FPRMATAÇÃO DE IMG SOBREPOSTA*/
+    /*FORMATA DE IMG SOBREPOSTA*/
     .overlay-image {
         top: 100%; /* Centraliza verticalmente */
         left: 100%; /* Centraliza horizontalmente */
@@ -34,12 +35,26 @@ p{
         width: 700px; /* Ajuste o tamanho da imagem conforme necessário */
     }
 
-    #text-initial{ /*FORMATAÇÃO TEXTO PÁGINA INICIAL*/
+    /*FORMATA TEXTO PÁGINA INICIAL*/
+    #text-initial{ 
         padding-top: 200px;
         padding-left: 250px;
     }
+
+    /* FORMATA */
     .subtitulo{
         color: white; /* Cor do texto no corpo */
         position: relative;
         top: 20px;
     }
+
+    /* FORMATA PÁGINA "PEDIDOS"*/
+    .col-2{
+        color: white; /* Cor do texto no corpo */ 
+    }
+
+    /* FORMATA FONTE DAS CHECKLISTS */
+    .col-4{
+        color:aliceblue;
+    }
+   
