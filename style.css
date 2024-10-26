@@ -58,3 +58,50 @@ p{
         color:aliceblue;
     }
    
+    .breadcrumb-item {
+        color:antiquewhite;
+        text-decoration: none;
+        font-size: medium;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifS;
+    }
+    
+    h2,h5 {
+        color: white; /* Cor do texto no corpo */
+        text-align: left; 
+        margin-top: 10px; /* Espaçamento acima do texto */
+    }
+    
+    h5, p {
+        color:black;
+    }
+
+    .toast {
+        visibility: hidden;
+        min-width: 200px;
+        margin: 0 auto;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 10px;
+        position: fixed;
+        z-index: 1;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .toast.show {
+        visibility: visible;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+    
+    @keyframes fadein {
+        from {bottom: 0; opacity: 0;}
+        to {bottom: 30px; opacity: 1;}
+    }
+    
+    @keyframes fadeout {
+        from {bottom: 30px; opacity: 1;}
+        to {bottom: 0; opacity: 0;}
+    }
