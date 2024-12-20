@@ -44,11 +44,6 @@ h6,
     margin: 3rem 25% 3rem 25%;
 }
 
-/* Navbar */
-.navbar {
-    height: 7.5vh;
-}
-
 /** Ocultar a seta padrão do dropdown **/
 .dropdown-toggle-no-arrow::after {
     display: none;
@@ -59,41 +54,6 @@ h6,
     display: block;
     opacity: 1;
     transition: opacity 0.3s ease;
-}
-
-/* Efeito vermelho ao passar o mouse */
-.nav-link.nav-hover {
-    position: relative;
-    overflow: hidden;
-}
-
-.nav-link.nav-hover::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    /* Espessura da linha */
-    background-color: var(--bs-red);
-    /* Cor da linha */
-    transition: width 0.4s ease, left 0.4s ease;
-    /* Transição apenas para hover */
-}
-
-.nav-link.nav-hover:hover::after {
-    width: 100%;
-    /* Largura total ao passar o mouse */
-    left: 0;
-    /* Alinha a linha ao lado esquerdo */
-}
-
-/* Linha fixa abaixo do item ativo */
-.nav-item.active .nav-link.nav-hover::after {
-    width: 100%;
-    /* Largura total da linha */
-    left: 0;
-    /* Alinha a linha ao lado esquerdo */
 }
 
 /* Ajuste Imagem Carousel Início */
