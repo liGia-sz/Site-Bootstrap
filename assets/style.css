@@ -1,3 +1,6 @@
+.navbar{
+size: 9lvh;
+}
 /* FORMATA BODY INICIAL */
 body {
     margin: 0;
@@ -8,7 +11,7 @@ body {
     background-position: center;
 }
 
-uardar css
+/**/
 :root {
     --bs-body-bg: #F8F7F2;
     --bs-body-color: #1A1A1A;
