@@ -1,6 +1,4 @@
-.navbar{
-size: 9lvh;
-}
+
 /* FORMATA BODY INICIAL */
 body {
     margin: 0;
@@ -31,24 +29,31 @@ body {
 .m-pp {
     margin: 3rem 25% 3rem 25%;
 }
-
-/** Ocultar a seta padrão do dropdown **/
-.dropdown-toggle-no-arrow::after {
-    display: none;
+/* Define as cores padrão da navbar */
+.bg-navbar {
+    background-color: #f7dfc0; 
 }
 
-/** Abrir dropdown com hover **/
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-    transition: opacity 0.3s ease;
+.navbar .nav-link {
+    color: #a54f27; /* Cor padrão dos links */
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-/* Ajuste Imagem Carousel Início */
-.dropdown-menu {
-    display: none;
-    opacity: 0;
+.navbar .nav-link:hover {
+    color: #c9813d; /* Cor do texto ao passar o mouse */
 }
+
+/* Para os dropdown items */
+.dropdown-menu .dropdown-item {
+    color: #343a40;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: #ffffff;
+    background-color: #ff4500; /* Cor de fundo no hover */
+}
+
 
 .custom-carousel {
     height: 75vh;
