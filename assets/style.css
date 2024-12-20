@@ -1,3 +1,4 @@
+
 /* FORMATA BODY INICIAL */
 body {
     margin: 0;
@@ -8,7 +9,7 @@ body {
     background-position: center;
 }
 
-uardar css
+/**/
 :root {
     --bs-body-bg: #F8F7F2;
     --bs-body-color: #1A1A1A;
@@ -16,21 +17,6 @@ uardar css
 
 body {
     font-family: 'Exo 2', sans-serif;
-}
-
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-    font-family: 'Dela Gothic One', sans-serif;
 }
 
 .btn {
@@ -43,64 +29,31 @@ h6,
 .m-pp {
     margin: 3rem 25% 3rem 25%;
 }
-
-/* Navbar */
-.navbar {
-    height: 7.5vh;
+/* Define as cores padrão da navbar */
+.bg-navbar {
+    background-color: #f7dfc0; 
 }
 
-/** Ocultar a seta padrão do dropdown **/
-.dropdown-toggle-no-arrow::after {
-    display: none;
+.navbar .nav-link {
+    color: #a54f27; /* Cor padrão dos links */
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-/** Abrir dropdown com hover **/
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-    transition: opacity 0.3s ease;
+.navbar .nav-link:hover {
+    color: #c9813d; /* Cor do texto ao passar o mouse */
 }
 
-/* Efeito vermelho ao passar o mouse */
-.nav-link.nav-hover {
-    position: relative;
-    overflow: hidden;
+/* Para os dropdown items */
+.dropdown-menu .dropdown-item {
+    color: #343a40;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.nav-link.nav-hover::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    /* Espessura da linha */
-    background-color: var(--bs-red);
-    /* Cor da linha */
-    transition: width 0.4s ease, left 0.4s ease;
-    /* Transição apenas para hover */
+.dropdown-menu .dropdown-item:hover {
+    color: #ffffff;
+    background-color: #ff4500; /* Cor de fundo no hover */
 }
 
-.nav-link.nav-hover:hover::after {
-    width: 100%;
-    /* Largura total ao passar o mouse */
-    left: 0;
-    /* Alinha a linha ao lado esquerdo */
-}
-
-/* Linha fixa abaixo do item ativo */
-.nav-item.active .nav-link.nav-hover::after {
-    width: 100%;
-    /* Largura total da linha */
-    left: 0;
-    /* Alinha a linha ao lado esquerdo */
-}
-
-/* Ajuste Imagem Carousel Início */
-.dropdown-menu {
-    display: none;
-    opacity: 0;
-}
 
 .custom-carousel {
     height: 75vh;
