@@ -55,17 +55,24 @@ body {
     color: #a54f27;/* Cor do texto ao passar o mouse */
 }
 
-/* Para os dropdown items */
+/* Exibe o dropdown ao passar o mouse sobre o item "Produtos" */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    z-index: 1000; /* Garante que o menu apareça acima dos outros elementos */
+}
+
+/* Para os itens do dropdown */
 .dropdown-menu .dropdown-item {
-    color: #343a40;
+    color: #c9813d;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
+/* Para o hover nos itens do dropdown */
 .dropdown-menu .dropdown-item:hover {
     color: #ffffff;
     background-color: #ff4500; /* Cor de fundo no hover */
 }
-
 
 .custom-carousel {
     height: 75vh;
