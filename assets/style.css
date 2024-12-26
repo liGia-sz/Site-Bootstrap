@@ -29,18 +29,30 @@ body {
 .m-pp {
     margin: 3rem 25% 3rem 25%;
 }
+
+/*NAVBAR*/
+.bg-navbar {
+    background-color: #f7dfc0;
+    height: 100px; 
+}
+
+.navbar {
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+}
+
 /* Define as cores padrão da navbar */
 .bg-navbar {
     background-color: #f7dfc0; 
 }
 
 .navbar .nav-link {
-    color: #a54f27; /* Cor padrão dos links */
+    color: #c9813d; /* Cor padrão dos links */
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .navbar .nav-link:hover {
-    color: #c9813d; /* Cor do texto ao passar o mouse */
+    color: #a54f27;/* Cor do texto ao passar o mouse */
 }
 
 /* Para os dropdown items */
