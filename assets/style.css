@@ -20,7 +20,7 @@ body {
 }
 
 .btn {
-    font-family: "Dela Gothic One", sans-serif;
+    font-family: 'Exo 2', sans-serif;
     text-transform: uppercase;
     padding: 1rem 2rem 1rem 2rem;
     font-size: 13px;
@@ -47,19 +47,19 @@ body {
 }
 
 .navbar .nav-link {
-    color: #c9813d; /* Cor padrão dos links */
+    color: #c9813d; 
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .navbar .nav-link:hover {
-    color: #a54f27;/* Cor do texto ao passar o mouse */
+    color: #a54f27;
 }
 
-/* Exibe o dropdown ao passar o mouse sobre o item "Produtos" */
+/* Exibe o dropdown */
 .dropdown:hover .dropdown-menu {
     display: block;
     position: absolute;
-    z-index: 1000; /* Garante que o menu apareça acima dos outros elementos */
+    z-index: 1000; 
 }
 
 /* Para os itens do dropdown */
@@ -71,18 +71,65 @@ body {
 /* Para o hover nos itens do dropdown */
 .dropdown-menu .dropdown-item:hover {
     color: #ffffff;
-    background-color: #ff4500; /* Cor de fundo no hover */
+    background-color: #ff4500; 
 }
 
-.custom-carousel {
-    height: 75vh;
+/* Estilo comum para todos os botões */
+.carousel-caption .btn {
+    position: absolute;
+    z-index: 10;  
+    font-size: 1rem;  
+    color: #fff;  
+    padding: 10px 20px;
 }
+
+/* CARROSSEL */
+.carousel-item {
+    position: relative;
+    height: 100%; 
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10px;  
+    left: 10px;    
+    right: 10px;
+    z-index: 10;  
+    color: white;  
+}
+
+/* Botões */
+.carousel-caption .btn {
+    position: absolute;
+    z-index: 11;  
+    padding: 10px 20px;  
+    background-color: #851511;  
+    color: white;  
+    border-radius: 5px;  
+    font-family: 'Exo 2', sans-serif;
+    text-decoration: none;  
+}
+
+/* Botão do primeiro slide */
+.carousel-item:first-child .carousel-caption .btn {
+    top: -120%;   
+    left: 2%;  
+}
+
+/* Botão do segundo slide */
+.carousel-item:nth-child(2) .carousel-caption .btn {
+    top: -300%;   
+    right: 45%; 
+}
+
+/* Botão do terceiro slide */
+.carousel-item:nth-child(3) .carousel-caption .btn {
+    bottom: 345%; 
+    left: 48%;   
+}
+
 
 .custom-carousel .carousel-inner {
-    height: 100%;
-}
-
-.custom-carousel .carousel-item {
     height: 100%;
 }
 
