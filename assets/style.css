@@ -113,7 +113,7 @@ body {
 /* Botão do primeiro slide */
 .carousel-item:first-child .carousel-caption .btn {
     top: -120%;   
-    left: 2%;  
+    left: 4%;  
 }
 
 /* Botão do segundo slide */
