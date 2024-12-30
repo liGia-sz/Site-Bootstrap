@@ -155,22 +155,28 @@ body {
     }
 }
 
+/*Título e Subtítulo*/
+.titulo, .subtitulo {
+    color: #8a5004;
+    font-size: xx-large;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
 /*CARDS*/
-/* Definir altura mínima para os cards, mas sem comprometer o conteúdo */
 .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%; /* Deixe os cards se ajustarem conforme o conteúdo */
-    overflow: hidden; /* Impede que o conteúdo saia do limite do card */
-    margin-bottom: 20px; /* Espaço entre os cards */
+    height: 100%; 
+    overflow: hidden; 
+    margin-bottom: 20px; 
 }
-
 /* Ajustes nas imagens para garantir que elas fiquem dentro do card */
 .img-carousel {
-    width: 100%; /* A imagem vai ocupar toda a largura do card */
-    height: 200px; /* Altura fixa para as imagens */
-    object-fit: cover; /* As imagens vão preencher o espaço sem distorcer */
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
 }
 
 /* Ajustar o texto dentro do card e garantir que os botões fiquem visíveis */
@@ -178,23 +184,23 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 1; /* Faz com que o texto ocupe o espaço restante */
-    overflow: hidden; /* Garante que nada saia do limite do card */
+    flex-grow: 1; 
+    overflow: hidden; 
 }
 
 /* Ajustes nos botões dentro dos cards */
 .card-body .btn {
-    margin-top: auto; /* Faz o botão ficar na parte inferior do card */
+    margin-top: auto; 
 }
 
 /* Responsividade para telas pequenas */
 @media (max-width: 768px) {
     .card {
-        height: auto; /* Ajusta a altura do card para telas pequenas */
+        height: auto; 
     }
 
     .img-carousel {
-        height: 180px; /* Altura reduzida para imagens em telas pequenas */
+        height: 180px; 
     }
 }
 
