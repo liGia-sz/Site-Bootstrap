@@ -211,6 +211,31 @@ body {
     }
 }
 
+/*QUEM SOMOS*/
+.quem-somos .card {
+    right: 40%;
+    width: 180%;  
+    margin: 20px auto; 
+    padding: 60px; 
+    background-color: #dbb27da4; 
+    border-radius: 10px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.quem-somos .card h1 {
+    font-size: 1.8rem; 
+    margin-bottom: 10px; 
+}
+
+.quem-somos .card h5 {
+    font-size: 1.2rem; 
+    line-height: 1.5; 
+}
+
+.quem-somos .card .btn {
+    padding: 10px 20px; 
+    font-size: 1.1rem; 
+}
 
 /* Linha Pontilhada - Footer */
 .footer-item {
