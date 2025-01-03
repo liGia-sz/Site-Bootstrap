@@ -238,10 +238,111 @@ body {
 }
 
 /*PÁGINA QUEM SOMOS*/
+/*TÍTULO E SUTÍTULOS*/
+.container-fluid {
+    flex-direction: column; /* Alinha os itens verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center; /* Garante que o texto dentro do contêiner esteja centralizado */
+}   
+.title {
+    color: rgb(63, 45, 31);
+}
+
+.sub-title {
+    color: rgb(80, 30, 6);
+}
+
+.sub-text {
+    color: rgb(129, 55, 20);
+}
+
+/*GRIDS EM CÍRCULO*/
 .carousel-container {
+    margin: 0 auto;
     position: relative;
-    width: 500px; /* Tamanho do contêiner do carrossel */
-    height: 600px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.logo-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Mantém a logo acima dos cards */
+}
+
+.card-circle img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem sem deformar */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Estilo para o círculo */
+.circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para os cards circulares */
+.card-circle {
+    position: absolute;
+    width: 180px; /* Ajustei o tamanho dos cards */
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform-origin: 50% 50%;
+    transition: transform 0.5s ease;
+}
+
+/* Tamanho e estilo do mini-card */
+.mini-card {
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 80%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Cards revelam mini-cards ao passar o mouse */
+.card-circle:hover .mini-card {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ao passar o mouse sobre um card, o mini-card aparecerá */
+.card-circle:hover {
+    transform: scale(1.1);
+}
+
+/* Posicionamento Circular */
+.circle .card-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(calc(360deg / 6 * var(--i))) translate(220px) rotate(calc(-360deg / 6 * var(--i))); /* Distância de 220px */
+    transition: transform 0.3s ease;
+}
+
+.carousel-container {
     margin: 0 auto;
 }
 
@@ -253,12 +354,6 @@ body {
     z-index: 10; /* Mantém a logo acima dos cards */
 }
 
-.circle {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
 .card-circle img {
     width: 100%; /* Faz a imagem ocupar toda a largura do card */
     height: 100%;
@@ -266,50 +361,76 @@ body {
     border-radius: 8px; /* Para bordas arredondadas */
 }
 
-/* Certifique-se de que os títulos dos cards sejam visíveis */
-.card-title {
-    margin-top: 8px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    z-index: 10; /* Garante que o título fique acima do card */
+/* MINI CARD */
+/* Contêiner geral */
+.carousel-container {
     position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Aumenta a visibilidade do mini-card e garante que o título não seja oculto */
+/* Círculo onde os cards irão se posicionar */
+.circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para os cards circulares */
+.card-circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform-origin: 50% 50%;
+    transition: transform 0.5s ease;
+}
+
+/* Tamanho e estilo do mini-card */
 .mini-card {
     position: absolute;
-    top: 120%; /* Ajuste o posicionamento para ficar abaixo do card */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 140px;
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
-    color: #fff;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
     padding: 10px;
     border-radius: 5px;
-    font-size: 12px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    opacity: 0; /* Começa invisível */
-    visibility: hidden; /* Começa invisível */
-    z-index: 5; /* Garante que o mini-card fique acima do card */
+    font-size: 14px;
+    width: 80%;
+    opacity: 0;
+    visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Mostrar mini-card ao passar o mouse sobre o card */
+/* Cards revelam mini-cards ao passar o mouse */
 .card-circle:hover .mini-card {
     opacity: 1;
     visibility: visible;
 }
 
+/* Ao passar o mouse sobre um card, o mini-card aparecerá */
+.card-circle:hover {
+    transform: scale(1.1);
+}
+
 /* Posicionamento Circular */
 .circle .card-circle {
     position: absolute;
+    gap: 10px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(calc(360deg / 6 * var(--i))) translate(200px) rotate(calc(-360deg / 6 * var(--i)));
-    z-index: 10; /* Garante que o card principal fique acima dos mini-cards */
     transition: transform 0.3s ease;
 }
 
@@ -320,6 +441,9 @@ body {
 .card-circle:nth-child(5) { --i: 4; }
 .card-circle:nth-child(6) { --i: 5; }
 
+.cansei{
+    color: rgb(253, 227, 196);;
+}
 /* FOOTER */
 .footer-item {
     display: flex;
