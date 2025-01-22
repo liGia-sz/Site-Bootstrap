@@ -95,21 +95,21 @@
     <div class="carousel-inner">
         <!-- Slide 1 -->
         <div class="carousel-item active">
-            <img src="img/carrossel1.png" class="d-block w-100" alt="Imagem de Hambúrguer">
+            <img src="img/Carrossel-1.png" class="d-block w-100" alt="Imagem de Hambúrguer">
             <div class="carousel-caption">
                 <a href="produtos/hamburgueres.html" class="btn btn-danger mt-3">Lanches</a>
             </div>
         </div>
         <!-- Slide 2 -->
         <div class="carousel-item">
-            <img src="img/carrossel2.png" class="d-block w-100" alt="Imagem de Sobremesa">
+            <img src="img/Carrossel-2.png" class="d-block w-100" alt="Imagem de Sobremesa">
             <div class="carousel-caption">
                 <a href="produtos/sobremesas.html" class="btn btn-danger mt-3">Sobremesas</a>
             </div>
         </div>
         <!-- Slide 3 -->
         <div class="carousel-item">
-            <img src="img/carrossel3.png" class="d-block w-100" alt="Imagem de Bebidas">
+            <img src="img/Carrrossel-3.png" class="d-block w-100" alt="Imagem de Bebidas">
             <div class="carousel-caption">
                 <a href="produtos/bebidas.html" class="btn btn-danger mt-3">Bebidas</a>
             </div>
@@ -132,6 +132,8 @@
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-md-4">
+
+                                <!--Card X-Tudão-->
                                 <div class="card border-0 text-center d-flex flex-column align-items-center">
                                     <img src="img/Card-Início-1.png" class="card-img-top img-carousel" alt="X-Tudão">
                                     <div class="card-body">
@@ -139,12 +141,34 @@
                                         <p class="card-text">O mais pedido da casa! Pão, ovo, 3 carnes, bacon, queijo, presunto, tomate, alface, batata palha. Acompanha 6 molhos da casa a escolha do cliente.</p>
                                         <h5 class="card-text">R$ 25,00</h5>
                                         <div class="d-flex justify-content-center">
-                                            <a href="produtos/hamburgueres.html" class="btn btn-danger me-2">Ver mais</a> 
+                                            <button class="btn btn-danger me-2" data-bs-toggle="modal" data-bs-target="#infoModalXTudao">Saiba mais</button> 
                                             <a href="comprar/hamburguer" class="btn btn-success">Comprar</a> 
                                         </div>
                                     </div>
                                 </div>
+                                <!--Modal para X-Tudão-->
+                            <div class="modal fade" id="infoModalXTudao" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - X-Tudão</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li><strong>Calorias:</strong> 650 kcal</li>
+                                                <li><strong>Açúcares:</strong> 12g</li>
+                                                <li><strong>Proteínas:</strong> 34g</li>
+                                                <li><strong>Gorduras:</strong> 35g</li>
+                                                <li><strong>Sódio:</strong> 850mg</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            </div>
+
+                            <!--Card Casadinho-->
                             <div class="col-md-4">
                                 <div class="card border-0 text-center d-flex flex-column align-items-center">
                                     <img src="img/Card-Início-2.png" class="card-img-top img-carousel" alt="Doce">
@@ -153,12 +177,34 @@
                                         <p class="card-text">Deliciosa combinação de chocolate e leite condensado, envolta em uma camada crocante. O doce perfeito para quem ama uma sobremesa saborosa!</p>
                                         <h5 class="card-text">R$ 18,00</h5>
                                         <div class="d-flex justify-content-center">
-                                            <a href="produtos/hamburgueres.html" class="btn btn-danger me-2">Ver mais</a>
+                                            <button class="btn btn-danger me-2" data-bs-toggle="modal" data-bs-target="#infoModalCasadinho">Saiba mais</button>
                                             <a href="comprar/hamburguer" class="btn btn-success">Comprar</a> 
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                             <!--Modal para Casadinho-->
+                             <div class="modal fade" id="infoModalCasadinho" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Casadinho</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li><strong>Calorias:</strong> 650 kcal</li>
+                                                <li><strong>Açúcares:</strong> 12g</li>
+                                                <li><strong>Proteínas:</strong> 34g</li>
+                                                <li><strong>Gorduras:</strong> 35g</li>
+                                                <li><strong>Sódio:</strong> 850mg</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card Drinks-->
                             <div class="col-md-4">
                                 <div class="card border-0 text-center d-flex flex-column align-items-center">
                                     <img src="img/Card-Início-3.png" class="card-img-top img-carousel" alt="Drinks">
@@ -167,11 +213,32 @@
                                         <p class="card-text">Refresque-se com nossos drinks exclusivos! Perfeitos para qualquer ocasião, com combinações únicas e sabores incomparáveis.</p>
                                         <h5 class="card-text">R$ 20,00</h5>
                                         <div class="d-flex justify-content-center">
-                                            <a href="produtos/hamburgueres.html" class="btn btn-danger me-2">Ver mais</a> 
+                                            <button class="btn btn-danger me-2" data-bs-toggle="modal" data-bs-target="#infoModalDrinks">Saiba mais</button>
                                             <a href="comprar/hamburguer" class="btn btn-success">Comprar</a> 
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <!--Modal para Drinks-->
+                            <div class="modal fade" id="infoModalDrinks" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Drinks</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li><strong>Calorias:</strong> 650 kcal</li>
+                                                <li><strong>Açúcares:</strong> 12g</li>
+                                                <li><strong>Proteínas:</strong> 34g</li>
+                                                <li><strong>Gorduras:</strong> 35g</li>
+                                                <li><strong>Sódio:</strong> 850mg</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>

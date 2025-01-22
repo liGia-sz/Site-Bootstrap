@@ -102,8 +102,7 @@ body {
 .carousel-caption .btn {
     position: absolute;
     z-index: 11;  
-    padding: 10px 20px;  
-    background-color: #851511;  
+    padding: 10px 20px;   
     color: white;  
     border-radius: 5px;  
     font-family: 'Exo 2', sans-serif;

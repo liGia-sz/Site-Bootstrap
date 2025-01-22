@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"> <!--Ignora caracteres especiais-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Adapta formato do site para qualquer tela -->
-        <title>IRIS LANCHES</title>
+        <title>HAMBÚRGUERES | IRIS LANCHES</title>
       
         <!--Google Fonts-->
           <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,10 +80,10 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item active ms-3 me-3">
-                            <a class="nav-link nav-hover h6 text" href="index.html" style="font-size: larger;"><strong>Início</strong></a>
+                            <a class="nav-link nav-hover h6 text" href="../index.html" style="font-size: larger;"><strong>Início</strong></a>
                         </li>
                         <li class="nav-item ms-3 me-3">
-                            <a class="nav-link nav-hover h6 text" href="quem-somos.html" style="font-size: larger;"><strong>Quem Somos</strong></a>
+                            <a class="nav-link nav-hover h6 text" href="../quem-somos.html" style="font-size: larger;"><strong>Quem Somos</strong></a>
                         </li> 
                         </ul>
                         <!--Logo-->
@@ -97,19 +97,19 @@
                                     <strong>Produtos</strong>
                                 </a>
                                 <ul class="dropdown-menu border-warning">
-                                    <li><a class="dropdown-item" href="produtos/hamburgueres.html"><strong>Hambúrgueres</strong></a></li>
-                                    <li><a class="dropdown-item" href="produtos/bebidas.html"><strong>Bebidas</strong></a></li>
-                                    <li><a class="dropdown-item" href="/produtos/porcoes.html"><strong>Porções</strong></a></li>
-                                    <li><a class="dropdown-item" href="produtos/sobremesas.html"><strong>Sobremesas</strong></a></li>
+                                    <li><a class="dropdown-item" href="../produtos/hamburgueres.html"><strong>Hambúrgueres</strong></a></li>
+                                    <li><a class="dropdown-item" href="../produtos/bebidas.html"><strong>Bebidas</strong></a></li>
+                                    <li><a class="dropdown-item" href="../produtos/porcoes.html"><strong>Porções</strong></a></li>
+                                    <li><a class="dropdown-item" href="../produtos/sobremesas.html"><strong>Sobremesas</strong></a></li>
                                     <li>
                                         <hr class="dropdown-divider border-success">
                                     </li>
-                                    <li><a class="dropdown-item" href="produtos.html" style="font-size: larger;"><strong>Ver tudo</strong></a></li>
+                                    <li><a class="dropdown-item" href="../produtos.html" style="font-size: larger;"><strong>Ver tudo</strong></a></li>
                                 </ul>
                             </li>
 
                             <li class="nav-item ms-3 me-3">
-                                <a class="nav-link nav-hover h6 text" href="contato.html" style="font-size: larger;"><strong>Contato</strong></a>
+                                <a class="nav-link nav-hover h6 text" href="    ../contato.html" style="font-size: larger;"><strong>Contato</strong></a>
                             </li>
                         </ul>
                 </div>
@@ -117,7 +117,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <!--Sacola-->
-                        <a class="navbar-brand mx-4" href="carrinho.html">
+                        <a class="navbar-brand mx-4" href="../carrinho.html">
                             <img src="../img/Sacola.png" alt="IRIS" width="50" height="50">
                         </a>
                     </li>
@@ -151,7 +151,7 @@
             </div>
         </div>
         
-        <!-- Hambúrgueres -->
+        <!-- HAMBÚRGUERES -->
         <div class="col-md-9">
             <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
                 <div class="row">
@@ -163,7 +163,7 @@
                                 <h5 class="card-title">X-Burguer Extra</h5>
                                 <p class="card-text">Pão, 1 bife de hambúrguer artesanal + 2 carnes de sua preferência, mussarela, bacon extra, tomate, alface, milho e batata palha. Acompanha 3 molhos da casa.</p>
                                 <div class="mt-auto">
-                                    <a href="hamburgueres/classic-byte/comprar.html" class="btn btn-danger">Comprar</a>
+                                    <button class="btn btn-danger" onclick="adicionarSacola('X-Burguer Extra', 'Pão, 1 bife de hambúrguer artesanal + 2 carnes de sua preferência, mussarela, bacon extra, tomate, alface, milho e batata palha. Acompanha 3 molhos da casa.')">Sacola</button>
                                     <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalXburguer">Saiba mais</button>
                                 </div>
                             </div>
@@ -198,7 +198,7 @@
                                 <h5 class="card-title">X-Frango</h5>
                                 <p class="card-text">Pão de brioche, frango desfiado + 2 carnes de sua preferência, ovo, queijo, presunto, tomate, alface, milho e batata palha. Acompanha 3 molhos da casa.</p>
                                 <div class="mt-auto">
-                                    <a href="hamburgueres/chicken-byte/comprar" class="btn btn-danger">Comprar</a>
+                                    <button class="btn btn-danger" onclick="adicionarSacola('X-Frango', 'Pão de brioche, frango desfiado + 2 carnes de sua preferência, ovo, queijo, presunto, tomate, alface, milho e batata palha. Acompanha 3 molhos da casa.')">Sacola</button>
                                     <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalXfrango">Saiba mais</button>
                                 </div>
                             </div>
@@ -223,6 +223,7 @@
                                 </div>
                             </div>
                         </div>
+                        </div>
                                 <!--X-Tudão-->
                                 <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
                                     <div class="card m-1 flex-fill">
@@ -231,8 +232,7 @@
                                             <h5 class="card-title">X-Tudão</h5>
                                             <p class="card-text">Pão, ovo, 3 carnes, bacon, queijo, presunto, tomate, alface, batata palha. Acompanha 6 molhos da casa a escolha do cliente.</p>
                                             <div class="mt-auto">
-                                                <a href="hamburgueres/fatty-byte/comprar"
-                                                    class="btn btn-danger">Comprar</a>
+                                                <button class="btn btn-danger" onclick="adicionarSacola('X-Tudão', 'Pão, ovo, 3 carnes, bacon, queijo, presunto, tomate, alface, batata palha. Acompanha 6 molhos da casa a escolha do cliente.')">Sacola</button>
                                                     <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalXTudao">Saiba mais</button>
                                             </div>
                                         </div>
@@ -268,8 +268,7 @@
                                         <p class="card-text">Hambúrguer de grão-de-bico temperado com alho, cebola e salsa, acompanhado de rúcula, tomate, cebola roxa caramelizada, 
                                             fatias de abacate e maionese de ervas frescas. Servido em pão integral levemente tostado. Acompanha 3 molhos da casa a escolha do cliente.</p>
                                         <div class="mt-auto">
-                                            <a href="hamburgueres/double-byte/comprar"
-                                                class="btn btn-danger">Comprar</a>
+                                            <button class="btn btn-danger" onclick="adicionarSacola('Delícia Verde', 'Hambúrguer de grão-de-bico temperado com alho, cebola e salsa, acompanhado de rúcula, tomate, cebola roxa caramelizada, fatias de abacate e maionese de ervas frescas. Servido em pão integral levemente tostado. Acompanha 3 molhos da casa a escolha do cliente.')">Sacola</button>
                                                 <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalDVerde">Saiba mais</button>
                                         </div>
                                     </div>
@@ -305,8 +304,7 @@
                                         <p class="card-text">Hambúrguer de carne bovina (200g) temperado com alho e especiarias, queijo canastra derretido, tiras de bacon crocante,
                                              pimenta biquinho e maionese de alho. Servido em pão de milho.</p>
                                         <div class="mt-auto">
-                                            <a href="hamburgueres/veggie-byte/comprar"
-                                                class="btn btn-danger">Comprar</a>
+                                            <button class="btn btn-danger" onclick="adicionarSacola('Mineirinho Gourmet', 'Hambúrguer de carne bovina (200g) temperado com alho e especiarias, queijo canastra derretido, tiras de bacon crocante, pimenta biquinho e maionese de alho. Servido em pão de milho.')">Sacola</button>
                                                 <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalMGourmet">Saiba mais</button>
                                         </div>
                                     </div>
@@ -342,8 +340,7 @@
                                         <p class="card-text"> Hambúrguer de frango temperado com ervas e especiarias, queijo Minas meia-cura, folhas de ora-pro-nóbis, geleia de pimenta e um toque de alho assado. 
                                             Servido em pão artesanal de mandioca. Acompanha 3 molhos da casa a escolha do cliente.</p>
                                         <div class="mt-auto">
-                                            <a href="hamburgueres/fatty-byte/comprar"
-                                                class="btn btn-danger">Comprar</a>
+                                            <button class="btn btn-danger" onclick="adicionarSacola('Frango Caipira', 'Hambúrguer de frango temperado com ervas e especiarias, queijo Minas meia-cura, folhas de ora-pro-nóbis, geleia de pimenta e um toque de alho assado. Servido em pão artesanal de mandioca. Acompanha 3 molhos da casa a escolha do cliente.')">Sacola</button>
                                                 <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalFCaipira">Saiba mais</button>
                                         </div>
                                     </div>
@@ -373,8 +370,20 @@
                     </div>
                 </div>
             </div>
-            </div>
         </div>
+
+        <script>
+            // Função para adicionar itens à sacola
+            function adicionarSacola(nome, descricao) {
+                let sacola = JSON.parse(localStorage.getItem('sacola')) || [];
+                const item = { nome, descricao };
+                
+                sacola.push(item);
+                localStorage.setItem('sacola', JSON.stringify(sacola));
+            
+                alert(`${nome} foi adicionado à sua sacola.`);
+            }
+            </script>
     </main>
 
     <!--FOOTER-->
@@ -386,7 +395,7 @@
       <div class="col-lg-4 col-sm-12 text-start" style="color: #e2c7a4;">
           <img src="../img/logo.navbar.png" class="mb-8" width="180px">
           <h6><strong>O sabor de casa.</strong></h6>
-          <p class="small">© 2024 Iris Lanches®. Todos os direitos reservados.</p>
+          <p class="small">© 2024 Iris Lanches. Todos os direitos reservados.</p>
       </div>
 
       <!-- Coluna 2 -->

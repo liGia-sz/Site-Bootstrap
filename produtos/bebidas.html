@@ -4,162 +4,528 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bebidas | IRIS LANCHES</title>
-    <link href="../img/favicon.ico" rel="icon" type="image/x-icon">
+    <title>BEBIDAS | IRIS LANCHES</title>
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!--Link Booststrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+  
+  <!--Bootstrap Icons-->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!--CSS Local-->
+  <link rel="stylesheet" href="../assets/style.css"> 
+  <style>
+  /* CSS para definir o background da página */
+  body {
+      font-family: 'Exo 2', sans-serif;
+      background-image: url('../img/Background-Hamburgueres.jpeg'); /* Defina o caminho da imagem aqui */
+      background-size: cover; /* Faz com que a imagem cubra toda a área da tela */
+      background-position: center center; /* Centraliza a imagem */
+      background-attachment: fixed; /* Deixa a imagem fixa durante o rolar da página */
+      margin: 0; /* Remove a margem padrão do body */
+      padding: 0; /* Remove o padding padrão */
+      height: 100vh; /* Faz o body ocupar toda a altura da tela */
+      color: white; /* Define a cor do texto como branco (se necessário para contraste) */
+  }
+  /* FOOTER */
+.footer-item {
+display: flex;
+color: #e2c7a4;
+}
+
+.footer-item>div:first-child {
+min-width: 65px;
+text-align: left;
+color: #e2c7a4;
+}
+
+.footer-line {
+color: #e2c7a4;
+border-bottom: 2px dotted;
+flex-grow: .5;
+margin: 0 5px;
+position: relative;
+top: -7px;
+}
+  </style>
 </head>
 
 <body>
-
-    <header>
-        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-            <div class="container">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../img/logo.navbar.png" alt="BurgerByte" width="175" height="75">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <!--NAVBAR-->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-navbar">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../quem-somos.html">Quem Somos</a>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active ms-3 me-3">
+                            <a class="nav-link nav-hover h6 text" href="../index.html" style="font-size: larger;"><strong>Início</strong></a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">Produtos</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="hamburgueres.html">Hambúrgueres</a></li>
-                                <li><a class="dropdown-item" href="acompanhamentos.html">Acompanhamentos</a>
-                                </li>
-                                <li><a class="dropdown-item" href="bebidas.html">Bebidas</a></li>
-                                <li><a class="dropdown-item" href="sobremesas.html">Sobremesas</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="../produtos.html">Ver tudo</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../contato.html">Contato</a>
-                        </li>
-                    </ul>
+                        <li class="nav-item ms-3 me-3">
+                            <a class="nav-link nav-hover h6 text" href="../quem-somos.html" style="font-size: larger;"><strong>Quem Somos</strong></a>
+                        </li> 
+                        </ul>
+                        <!--Logo-->
+                        <a class="navbar-brand mx-4" href="index.html">
+                            <img src="../img/logo.navbar.png" alt="IRIS" width="120" height="120">
+                        </a>
+                        <ul class="navbar-nav">
+                            <li class="nav-item ms-3 me-3 dropdown">
+                                <a class="nav-link nav-hover h6 text" href="#" 
+                                    data-bs-toggle="dropdown" aria-expanded="false" style="font-size: larger;">
+                                    <strong>Produtos</strong>
+                                </a>
+                                <ul class="dropdown-menu border-warning">
+                                    <li><a class="dropdown-item" href="../produtos/hamburgueres.html"><strong>Hambúrgueres</strong></a></li>
+                                    <li><a class="dropdown-item" href="../produtos/bebidas.html"><strong>Bebidas</strong></a></li>
+                                    <li><a class="dropdown-item" href="../produtos/porcoes.html"><strong>Porções</strong></a></li>
+                                    <li><a class="dropdown-item" href="../produtos/sobremesas.html"><strong>Sobremesas</strong></a></li>
+                                    <li>
+                                        <hr class="dropdown-divider border-success">
+                                    </li>
+                                    <li><a class="dropdown-item" href="../produtos.html" style="font-size: larger;"><strong>Ver tudo</strong></a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item ms-3 me-3">
+                                <a class="nav-link nav-hover h6 text" href="    ../contato.html" style="font-size: larger;"><strong>Contato</strong></a>
+                            </li>
+                        </ul>
                 </div>
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <!--Sacola-->
+                        <a class="navbar-brand mx-4" href="../carrinho.html">
+                            <img src="../img/Sacola.png" alt="IRIS" width="50" height="50">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
-    </header>
-
-    <main>
-
-        <div class="container p-4">
-
+         <!--BREADCRUMB-->
+         <div class="container p-4">
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../index.html">Início</a></li>
-                    <li class="breadcrumb-item"><a href="../produtos.html">Produtos</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Bebidas</li>
+                    <li class="breadcrumb-item"><a href="../index.html" style="color: #e2c7a4;">Início</a></li>
+                    <li class="breadcrumb-item"><a href="../produtos.html" style="color: #e2c7a4;">Produtos</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" style="color: #e2c7a4;">Hambúrgueres</li>
                 </ol>
             </nav>
+        </header>
 
+    <main>
+        <!-- Layout com a Sidebar e as bebidas -->
+        <div class="container-fluid">
             <div class="row">
+        <!-- Sumário do Cardápio (Sidebar) -->
+        <div class="col-md-3">
+            <div class="list-group m-1">
+        <a href="../produtos.html" class="list-group-item list-group-item-action">Tudo</a>
+        <a href="../produtos/hamburgueres.html" class="list-group-item list-group-item-action">Hambúrgueres</a>
+        <a href="../produtos/acompanhamentos.html" class="list-group-item list-group-item-action">Acompanhamentos</a>
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">Bebidas</a>
+        <a href="../produtos/sobremesas.html" class="list-group-item list-group-item-action">Sobremesas</a>
+    </div>
+</div>
 
-                <div class="col-md-8 order-md-2">
-
-                    <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0"
-                        data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-
-                        <div class="row d-flex">
-
-                            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
-                                <div class="card m-1 flex-fill">
-                                    <img src="../assets/img/coca-cola.png" class="card-img-top" alt="Coca-Cola">
-                                    <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">Refrigerantes</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </p>
-                                        <div class="mt-auto">
-                                            <a href="bebidas/refrigerantes/comprar.html"
-                                                class="btn btn-danger">Comprar</a>
-                                            <a href="bebidas/refrigerantes.html" class="btn btn-secondary">Saiba
-                                                mais</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex" style="min-height: 200px">
-                                <div class="card m-1 flex-fill">
-                                    <img src="../assets/img/del-valle-laranja.png" class="card-img-top"
-                                        alt="Del Valle Laranja">
-                                    <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">Sucos</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </p>
-                                        <div class="mt-auto">
-                                            <a href="bebidas/sucos/comprar" class="btn btn-danger">Comprar</a>
-                                            <a href="bebidas/sucos.html" class="btn btn-secondary">Saiba mais</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex" style="min-height: 200px">
-                                <div class="card m-1 flex-fill">
-                                    <img src="../assets/img/agua-crystal.png" class="card-img-top" alt="Água Mineral">
-                                    <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">Água Mineral</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </p>
-                                        <div class="mt-auto">
-                                            <a href="bebidas/agua-mineral/comprar" class="btn btn-danger">Comprar</a>
-                                            <a href="bebidas/agua-mineral.html" class="btn btn-secondary">Saiba mais</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+<!--BEBIDAS-->
+<div class="col-md-9">
+            <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+        <div class="row">
+            <!-- Caipirinha -->
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
+                <div class="card m-1 flex-fill">
+                    <img src="../img/Bebidas-Caipirinha.png" class="card-img-top" alt="DRINK">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Caipirinha</h5>
+                        <p class="card-text">Drink alcoólico e não alcoólico. Favor especificar na descrição do pedido.</p>
+                        <div class="mt-auto">
+                            <button class="btn btn-danger" onclick="adicionarSacola('Caipirinha', 'Drink alcoólico e não alcoólico. Favor especificar na descrição do pedido.')">Sacola</button>
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalCaipirinha">Saiba mais</button>
                         </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-4 order-md-1">
-                    <div class="list-group m-1">
-                        <a href="../produtos.html" class="list-group-item list-group-item-action">Tudo</a>
-                        <a href="../produtos/hamburgueres.html"
-                            class="list-group-item list-group-item-action">Hambúrgueres</a>
-                        <a href="../produtos/acompanhamentos.html"
-                            class="list-group-item list-group-item-action">Acompanhamentos</a>
-                        <a href="#" class="list-group-item list-group-item-action active"
-                            aria-current="true">Bebidas</a>
-                        <a href="../produtos/sobremesas.html"
-                            class="list-group-item list-group-item-action">Sobremesas</a>
                     </div>
                 </div>
-
+            </div>
+            <!-- Modal para Caipirinha -->
+            <div class="modal fade" id="infoModalCaipirinha" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Caipirinha</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li><strong>Calorias:</strong> 650 kcal</li>
+                                <li><strong>Açúcares:</strong> 12g</li>
+                                <li><strong>Proteínas:</strong> 34g</li>
+                                <li><strong>Gorduras:</strong> 35g</li>
+                                <li><strong>Sódio:</strong> 850mg</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-        </div>
+            <!-- Piña colada -->
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
+                <div class="card m-1 flex-fill">
+                    <img src="../img/Bebidas-Piña Colada.png" class="card-img-top" alt="DRINK">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Piña colada</h5>
+                        <p class="card-text">Drink alcoólico e não alcoólico. Favor especificar na descrição do pedido.</p>
+                        <div class="mt-auto">
+                            <button class="btn btn-danger" onclick="adicionarSacola('Piña colada', 'Drink alcoólico e não alcoólico. Favor especificar na descrição do pedido.')">Sacola</button>
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalPColada">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal para Piña colada -->
+            <div class="modal fade" id="infoModalPColada" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Piña colada</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li><strong>Calorias:</strong> 650 kcal</li>
+                                <li><strong>Açúcares:</strong> 12g</li>
+                                <li><strong>Proteínas:</strong> 34g</li>
+                                <li><strong>Gorduras:</strong> 35g</li>
+                                <li><strong>Sódio:</strong> 850mg</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Chopp de Vinho-->
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
+                <div class="card m-1 flex-fill">
+                    <img src="../img/Bebidas-Chopp de Vinho.png" class="card-img-top" alt="DRINK">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Chopp de Vinho</h5>
+                        <p class="card-text">De 100ml a 1L. favor especificar tamanho na descrição do pedido.</p>
+                        <div class="mt-auto">
+                            <button class="btn btn-danger" onclick="adicionarSacola('Chopp de Vinho', 'De 100ml a 1L. favor especificar tamanho na descrição do pedido.')">Sacola</button>
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalCVinho">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal para Chopp de Vinho -->
+            <div class="modal fade" id="infoModalCVinho" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Chopp de Vinho</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li><strong>Calorias:</strong> 650 kcal</li>
+                                <li><strong>Açúcares:</strong> 12g</li>
+                                <li><strong>Proteínas:</strong> 34g</li>
+                                <li><strong>Gorduras:</strong> 35g</li>
+                                <li><strong>Sódio:</strong> 850mg</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Suco de Laranja -->
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
+                <div class="card m-1 flex-fill">
+                    <img src="../img/Bebidas-S.Laranja.png" class="card-img-top" alt="SUCO">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Suco de Laranja</h5>
+                        <p class="card-text">500ml de Suco natural de frutas frescas feito na hora.</p>
+                        <div class="mt-auto">
+                            <button class="btn btn-danger" onclick="adicionarSacola('Suco de Laranja', '500ml de Suco natural de frutas frescas feito na hora.')">Sacola</button>
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalSLaranja">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal para Suco de Laranja -->
+            <div class="modal fade" id="infoModalSLaranja" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Suco de Laranja</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li><strong>Calorias:</strong> 650 kcal</li>
+                                <li><strong>Açúcares:</strong> 12g</li>
+                                <li><strong>Proteínas:</strong> 34g</li>
+                                <li><strong>Gorduras:</strong> 35g</li>
+                                <li><strong>Sódio:</strong> 850mg</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+             <!-- Suco de Caju -->
+             <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
+                <div class="card m-1 flex-fill">
+                    <img src="../img/Bebidas-S.Caju.png" class="card-img-top" alt="SUCO">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Suco de Caju</h5>
+                        <p class="card-text">500ml de Suco natural de frutas frescas feito na hora.</p>
+                        <div class="mt-auto">
+                            <button class="btn btn-danger" onclick="adicionarSacola('Suco de Caju', '500ml de Suco natural de frutas frescas feito na hora.')">Sacola</button>
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalSCaju">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal para Suco de Caju -->
+            <div class="modal fade" id="infoModalSCaju" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Suco de Caju</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li><strong>Calorias:</strong> 650 kcal</li>
+                                <li><strong>Açúcares:</strong> 12g</li>
+                                <li><strong>Proteínas:</strong> 34g</li>
+                                <li><strong>Gorduras:</strong> 35g</li>
+                                <li><strong>Sódio:</strong> 850mg</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Suco de Abacaxi -->
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
+                <div class="card m-1 flex-fill">
+                    <img src="../img/Bebidas-S.Abacaxi.png" class="card-img-top" alt="SUCO">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Suco de Abacaxi</h5>
+                        <p class="card-text">500ml de Suco natural de frutas frescas feito na hora.</p>
+                        <div class="mt-auto">
+                            <button class="btn btn-danger" onclick="adicionarSacola('Suco de Abacaxi', '500ml de Suco natural de frutas frescas feito na hora.')">Sacola</button>
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalSAbacaxi">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal para Suco de Abacaxi -->
+            <div class="modal fade" id="infoModalSAbacaxi" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Suco de Abacaxi</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li><strong>Calorias:</strong> 650 kcal</li>
+                                <li><strong>Açúcares:</strong> 12g</li>
+                                <li><strong>Proteínas:</strong> 34g</li>
+                                <li><strong>Gorduras:</strong> 35g</li>
+                                <li><strong>Sódio:</strong> 850mg</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coca-cola -->
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
+                <div class="card m-1 flex-fill">
+                    <img src="../img/Bebidas-Coca.png" class="card-img-top" alt="REFRI">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Coca Cola</h5>
+                        <p class="card-text">Temos todos os tamanhos. Especifique sua preferência na aba Detalhes ao final do pedido pedido.</p>
+                        <div class="mt-auto">
+                            <button class="btn btn-danger" onclick="adicionarSacola('Coca-Cola', 'Temos todos os tamanhos. Especifique sua preferência na aba Detalhes ao final do pedido pedido.')">Sacola</button>
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalCocaCola">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal para Suco de Coca-Cola -->
+            <div class="modal fade" id="infoModalCocaCola" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Coca Cola</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li><strong>Calorias:</strong> 650 kcal</li>
+                                <li><strong>Açúcares:</strong> 12g</li>
+                                <li><strong>Proteínas:</strong> 34g</li>
+                                <li><strong>Gorduras:</strong> 35g</li>
+                                <li><strong>Sódio:</strong> 850mg</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+   
+
+            <!-- Guaraná -->
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
+                <div class="card m-1 flex-fill">
+                    <img src="../img/Bebidas-Naná.png" class="card-img-top" alt="REFRI">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Guaraná</h5>
+                        <p class="card-text">Temos todos os tamanhos. Especifique sua preferência na aba Detalhes ao final do pedido pedido.</p>
+                        <div class="mt-auto">
+                            <button class="btn btn-danger" onclick="adicionarSacola('Guaraná', 'Temos todos os tamanhos. Especifique sua preferência na aba Detalhes ao final do pedido pedido.')">Sacola</button>
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalGuarana">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal para Guaraná -->
+            <div class="modal fade" id="infoModalGuarana" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Guaraná</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li><strong>Calorias:</strong> 650 kcal</li>
+                                <li><strong>Açúcares:</strong> 12g</li>
+                                <li><strong>Proteínas:</strong> 34g</li>
+                                <li><strong>Gorduras:</strong> 35g</li>
+                                <li><strong>Sódio:</strong> 850mg</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sprite -->
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
+                <div class="card m-1 flex-fill">
+                    <img src="../img/Bebidas-Sprite.png" class="card-img-top" alt="REFRI">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Sprite</h5>
+                        <p class="card-text">Temos todos os tamanhos. Especifique sua preferência na aba Detalhes ao final do pedido pedido.</p>
+                        <div class="mt-auto">
+                            <button class="btn btn-danger" onclick="adicionarSacola('Sprite', 'Temos todos os tamanhos. Especifique sua preferência na aba Detalhes ao final do pedido pedido.')">Sacola</button>
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalSprite">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal para Sprite -->
+            <div class="modal fade" id="infoModalSprite" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Sprite</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li><strong>Calorias:</strong> 650 kcal</li>
+                                <li><strong>Açúcares:</strong> 12g</li>
+                                <li><strong>Proteínas:</strong> 34g</li>
+                                <li><strong>Gorduras:</strong> 35g</li>
+                                <li><strong>Sódio:</strong> 850mg</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <script>
+                // Função para adicionar itens à sacola
+                function adicionarSacola(nome, descricao) {
+                    let sacola = JSON.parse(localStorage.getItem('sacola')) || [];
+                    const item = { nome, descricao };
+                    
+                    sacola.push(item);
+                    localStorage.setItem('sacola', JSON.stringify(sacola));
+                
+                    alert(`${nome} foi adicionado à sua sacola.`);
+                }
+                </script>
     </main>
 
-    <footer>
-        <p>© BurgerByte 2024</p>
-    </footer>
+    <!--FOOTER-->
+<footer>
+    <div class="row border-bottom border-warning"></div>
+<div class="container my-5">
+  <div class="row">
+      <!-- Coluna 1 -->
+      <div class="col-lg-4 col-sm-12 text-start" style="color: #e2c7a4;">
+          <img src="../img/logo.navbar.png" class="mb-8" width="180px">
+          <h6><strong>O sabor de casa.</strong></h6>
+          <p class="small">© 2024 Iris Lanches. Todos os direitos reservados.</p>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+      <!-- Coluna 2 -->
+      <div class="col-lg-4 col-sm-12 text-start my-lg-0 my-sm-4" style="color: #e2c7a4;">
+          <h5 class="mb-3"><strong>Visite-nos!</strong></h5>
+          <p>Rua Holanda, 456 - Coronel Fariciano<br>
+              fbc@irislanches.com.br<br>
+              (31) 3842-4488</p>
+          <p>Av. Pedro Linhares Gomes, 5.431 - Ipatinga<br>
+              ipa@irislanches.com.br<br>
+              (31) 3842-5267</p>
+      </div>
+
+      <!-- Coluna 3 -->
+      <div class="col-lg-4 col-sm-12 text-start" style="color: #e2c7a4;">
+          <h5 class="mb-3"><strong>Horário de Funcionamento</strong></h5>
+          <div class="footer-item">
+              <div><strong>De Segunda a Sexta</strong></div>
+              <div class="footer-line"></div>
+              <div>17:00-00:00</div>
+          </div>
+          <div class="footer-item">
+              <div><strong>Sábados</strong></div>
+              <div class="footer-line"></div>
+              <div>10:00-22:00</div>
+          </div>
+          <div class="footer-item">
+              <div><strong>Domingos</strong></div>
+              <div class="footer-line"></div>
+              <div>15:00-22:00</div>
+</div>
+
+<a href="https://www.facebook.com/SenaiMG" class="btn text-danger fs-5"><i
+class="bi bi-facebook"></i></a>
+<a href="https://www.instagram.com/senaiminas" class="btn text-danger fs-5"><i
+class="bi bi-instagram"></i></a>
+<a href="https://x.com/senaimg" class="btn text-danger fs-5"><i class="bi bi-twitter"></i></a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"></script>
 
 </body>
-
 </html>
