@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEBIDAS | IRIS LANCHES</title>
+    <title>PORÇÕES | IRIS LANCHES</title>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -132,8 +132,8 @@ top: -7px;
         <div class="list-group m-1">
     <a href="../produtos.html" class="list-group-item list-group-item-action">Tudo</a>
     <a href="../produtos/hamburgueres.html" class="list-group-item list-group-item-action">Hambúrgueres</a>
-    <a href="../produtos/acompanhamentos.html" class="list-group-item list-group-item-action">Acompanhamentos</a>
-    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">Bebidas</a>
+    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">Porções</a>
+    <a href="../produtos/bebidas.html" class="list-group-item list-group-item-action">Bebidas</a>
     <a href="../produtos/sobremesas.html" class="list-group-item list-group-item-action">Sobremesas</a>
 </div>
 </div>
@@ -142,22 +142,59 @@ top: -7px;
 <div class="col-md-9">
     <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
         <div class="row">
-            <!-- Torresmo Crocante -->
+            <!-- Batatas Crocantes -->
             <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
                 <div class="card m-1 flex-fill">
-                    <img src="../img/" class="card-img-top" alt="X-Burguer">
+                    <img src="../img/Card-BCrocantes.png" class="card-img-top" alt="Batatas Crocantes">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Torresmo Crocante</h5>
-                        <p class="card-text">Acompanhado de fatias de limão e molho de pimenta artesanal.</p>
+                        <h5 class="card-title">Batatas Crocantes</h5>
+                        <p class="card-text">Porções de 200 a 500g. Antotar tamanho na descrição do pedido.</p>
+                        <h5>R$20,00</h5>
                         <div class="mt-auto">
-                            <button class="btn btn-danger" onclick="adicionarSacola('Torresmo Crocante', 'Acompanhado de fatias de limão e molho de pimenta artesanal.')">Sacola</button>
-                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalTCrocante">Saiba mais</button>
+                            <button class="btn btn-danger" onclick="adicionarSacola('X-Burguer Extra', 'R$20,00')">Sacola</button>
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalBCrocante">Saiba mais</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Modal para Torresmo Crocante -->
-            <div class="modal fade" id="infoModalTCrocante" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+            <!-- Modal para Batatas Crocantes -->
+            <div class="modal fade" id="infoModalBCrocante" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Batatas Crocantes</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li><strong>Calorias:</strong> 650 kcal</li>
+                                <li><strong>Açúcares:</strong> 12g</li>
+                                <li><strong>Proteínas:</strong> 34g</li>
+                                <li><strong>Gorduras:</strong> 35g</li>
+                                <li><strong>Sódio:</strong> 850mg</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Torresmo Crocante -->
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
+                <div class="card m-1 flex-fill">
+                    <img src="../img/Card-Torresmo.png" class="card-img-top" alt="X-Frango">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Torresmo Crocante</h5>
+                        <p class="card-text">Acompanhado de fatias de limão e molho de pimenta artesanal.</p>
+                        <h5>R$15,75</h5>
+                        <div class="mt-auto">
+                            <button class="btn btn-danger" onclick="adicionarSacola('Torresmo Crocante', 'R$15,75')">Sacola</button>
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalXfrango">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal para  Torresmo Crocante -->
+            <div class="modal fade" id="infoModalXfrango" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -166,154 +203,245 @@ top: -7px;
                         </div>
                         <div class="modal-body">
                             <ul>
-                                <li><strong>Calorias:</strong> 650 kcal</li>
-                                <li><strong>Açúcares:</strong> 12g</li>
-                                <li><strong>Proteínas:</strong> 34g</li>
-                                <li><strong>Gorduras:</strong> 35g</li>
-                                <li><strong>Sódio:</strong> 850mg</li>
+                                <li><strong>Calorias:</strong> 550 kcal</li>
+                                <li><strong>Açúcares:</strong> 9g</li>
+                                <li><strong>Proteínas:</strong> 28g</li>
+                                <li><strong>Gorduras:</strong> 28g</li>
+                                <li><strong>Sódio:</strong> 750mg</li>
                             </ul>
                         </div>
                     </div>
                 </div>
+                </div>
+                        <!--Mandioquinha Frita-->
+                        <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
+                            <div class="card m-1 flex-fill">
+                                <img src="../img/Card-mandioca.png" class="card-img-top" alt="Mandioquinha Frita">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Mandioquinha Frita</h5>
+                                    <p class="card-text">Servida com molho de alho ou maionese temperada.</p>
+                                    <h5>R$13,50</h5>
+                                    <div class="mt-auto">
+                                        <button class="btn btn-danger" onclick="adicionarSacola('Mandioquinha Frita', 'R$13,50')">Sacola</button>
+                                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalMandioca">Saiba mais</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal para Mandioquinha Frita -->
+                        <div class="modal fade" id="infoModalMandioca" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Mandioquinha Frita</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li><strong>Calorias:</strong> 650 kcal</li>
+                                            <li><strong>Açúcares:</strong> 12g</li>
+                                            <li><strong>Proteínas:</strong> 34g</li>
+                                            <li><strong>Gorduras:</strong> 35g</li>
+                                            <li><strong>Sódio:</strong> 850mg</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container mb-5">
+                            <!-- Espaço Vazio -->
+                        </div>
+                        
+                    <!--Pão de Queijo Recheado-->
+                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
+                        <div class="card m-1 flex-fill">
+                            <img src="../img/Card-PãodeQueijo.png" class="card-img-top" alt="Pão de Queijo Recheado">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Pão de Queijo Recheado</h5>
+                                <p class="card-text">Recheios: requeijão, carne seca ou pernil desfiado.</p>
+                                    <h5>R$5,00</h5>
+                                    <div class="mt-auto">
+                                    <button class="btn btn-danger" onclick="adicionarSacola('Pão de Queijo Recheado', 'R$5,00')">Sacola</button>
+                                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalPQR">Saiba mais</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Modal para Pão de Queijo Recheado-->
+                    <div class="modal fade" id="infoModalPQR" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Pão de Queijo Recheado</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><strong>Calorias:</strong> 650 kcal</li>
+                                        <li><strong>Açúcares:</strong> 12g</li>
+                                        <li><strong>Proteínas:</strong> 34g</li>
+                                        <li><strong>Gorduras:</strong> 35g</li>
+                                        <li><strong>Sódio:</strong> 850mg</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Costelinha Suína com Molho Barbecue-->
+                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
+                        <div class="card m-1 flex-fill">
+                            <img src="../img/Card-Costela-BBQ.png" class="card-img-top" alt="Mineirinho">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Costelinha Suína com Molho Barbecue</h5>
+                                <p class="card-text">Hambúrguer de carne bovina (200g) temperado com alho e especiarias, queijo canastra derretido, tiras de bacon crocante,
+                                     pimenta biquinho e maionese de alho. Servido em pão de milho.</p>
+                                     <h5>R$28,00</h5>
+                                     <div class="mt-auto">
+                                    <button class="btn btn-danger" onclick="adicionarSacola('Costelinha Suína com Molho Barbecue', 'R$35,00')">Sacola</button>
+                                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalCostela">Saiba mais</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Modal para Costelinha Suína com Molho Barbecue-->
+                    <div class="modal fade" id="infoModalCostela" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Costelinha Suína com Molho Barbecue</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><strong>Calorias:</strong> 650 kcal</li>
+                                        <li><strong>Açúcares:</strong> 12g</li>
+                                        <li><strong>Proteínas:</strong> 34g</li>
+                                        <li><strong>Gorduras:</strong> 35g</li>
+                                        <li><strong>Sódio:</strong> 850mg</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Linguiça Acebolada-->
+                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
+                        <div class="card m-1 flex-fill">
+                            <img src="../img/Crad-LAcebolada.png" class="card-img-top" alt="Linguiça Acebolada">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Linguiça Acebolada</h5>
+                                <p class="card-text"> Feita com linguiça mineira e finalizada com cebolas douradas.</p>
+                                    <h5>R$26,00</h5>
+                                    <div class="mt-auto">
+                                    <button class="btn btn-danger" onclick="adicionarSacola('Linguiça Acebolada', 'Hambúrguer de frango temperado com ervas e especiarias, queijo Minas meia-cura, folhas de ora-pro-nóbis, geleia de pimenta e um toque de alho assado. Servido em pão artesanal de mandioca. Acompanha 3 molhos da casa a escolha do cliente.')">Sacola</button>
+                                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalFCaipira">Saiba mais</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Modal para Linguiça Acebolada-->
+                    <div class="modal fade" id="infoModalFCaipira" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais -  Linguiça Acebolada</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><strong>Calorias:</strong> 650 kcal</li>
+                                        <li><strong>Açúcares:</strong> 12g</li>
+                                        <li><strong>Proteínas:</strong> 34g</li>
+                                        <li><strong>Gorduras:</strong> 35g</li>
+                                        <li><strong>Sódio:</strong> 850mg</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="container mb-5">
+                <!-- Espaço Vazio -->
             </div>
 
-            <!-- Mandioquinha Frita -->
-            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
-                <div class="card m-1 flex-fill">
-                    <img src="../img/" class="card-img-top" alt="X-Burguer">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Mandioquinha Frita</h5>
-                        <p class="card-text">Servida com molho de alho ou maionese temperada.
-                        </p>
-                        <div class="mt-auto">
-                            <button class="btn btn-danger" onclick="adicionarSacola('Mandioquinha Frita', 'Servida com molho de alho ou maionese temperada.')">Sacola</button>
-                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalMFrita">Saiba mais</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal para Mandioquinha Frita -->
-            <div class="modal fade" id="infoModalMFrita" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Mandioquinha Frita</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <ul>
-                                <li><strong>Calorias:</strong> 650 kcal</li>
-                                <li><strong>Açúcares:</strong> 12g</li>
-                                <li><strong>Proteínas:</strong> 34g</li>
-                                <li><strong>Gorduras:</strong> 35g</li>
-                                <li><strong>Sódio:</strong> 850mg</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pão de Queijo Recheado -->
-            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
-                <div class="card m-1 flex-fill">
-                    <img src="../img/" class="card-img-top" alt="X-Burguer">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Pão de Queijo Recheado</h5>
-                        <p class="card-text">Recheios: requeijão, carne seca ou pernil desfiado.</p>
-                        <div class="mt-auto">
-                            <button class="btn btn-danger" onclick="adicionarSacola('Pão de Queijo Recheado', 'Recheios: requeijão, carne seca ou pernil desfiado.')">Sacola</button>
-                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalPQR">Saiba mais</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal para Pão de Queijo Recheado -->
-            <div class="modal fade" id="infoModalPQR" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Pão de Queijo Recheado</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <ul>
-                                <li><strong>Calorias:</strong> 650 kcal</li>
-                                <li><strong>Açúcares:</strong> 12g</li>
-                                <li><strong>Proteínas:</strong> 34g</li>
-                                <li><strong>Gorduras:</strong> 35g</li>
-                                <li><strong>Sódio:</strong> 850mg</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Costelinha Suína com Molho Barbecue -->
-            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
-                <div class="card m-1 flex-fill">
-                    <img src="../img/" class="card-img-top" alt="X-Burguer">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Costelinha Suína com Molho Barbecue</h5>
-                        <p class="card-text">Porção de costelinhas assadas ou fritas, finalizadas com molho barbecue.</p>
-                        <div class="mt-auto">
-                            <button class="btn btn-danger" onclick="adicionarSacola('Costelinha Suína com Molho Barbecue', 'Porção de costelinhas assadas ou fritas, finalizadas com molho barbecue.')">Sacola</button>
-                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalCostelinha">Saiba mais</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal para Costelinha Suína com Molho Barbecue -->
-            <div class="modal fade" id="infoModalCostelinha" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Costelinha Suína com Molho Barbecue</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <ul>
-                                <li><strong>Calorias:</strong> 650 kcal</li>
-                                <li><strong>Açúcares:</strong> 12g</li>
-                                <li><strong>Proteínas:</strong> 34g</li>
-                                <li><strong>Gorduras:</strong> 35g</li>
-                                <li><strong>Sódio:</strong> 850mg</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Linguiça Acebolada -->
-            <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
-                <div class="card m-1 flex-fill">
-                    <img src="../img/" class="card-img-top" alt="X-Burguer">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Linguiça Acebolada</h5>
-                        <p class="card-text">Feita com linguiça mineira e finalizada com cebolas douradas.</p>
-                        <div class="mt-auto">
-                            <button class="btn btn-danger" onclick="adicionarSacola('Linguiça Acebolada', 'Feita com linguiça mineira e finalizada com cebolas douradas.')">Sacola</button>
-                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalLAcebolada">Saiba mais</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal para Linguiça  Acebolada -->
-            <div class="modal fade" id="infoModalCostelinha" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Linguiça Acebolada</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <ul>
-                                <li><strong>Calorias:</strong> 650 kcal</li>
-                                <li><strong>Açúcares:</strong> 12g</li>
-                                <li><strong>Proteínas:</strong> 34g</li>
-                                <li><strong>Gorduras:</strong> 35g</li>
-                                <li><strong>Sódio:</strong> 850mg</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <script>
+                // Função para adicionar itens à sacola
+                function adicionarSacola(nome, descricao) {
+                    let sacola = JSON.parse(localStorage.getItem('sacola')) || [];
+                    const item = { nome, descricao };
+                    
+                    sacola.push(item);
+                    localStorage.setItem('sacola', JSON.stringify(sacola));
+                
+                    alert(`${nome} foi adicionado à sua sacola.`);
+                }
+                </script>
+        </main>
+    
+        <!--FOOTER-->
+    <footer>
+        <div class="row border-bottom border-warning"></div>
+    <div class="container my-5">
+      <div class="row">
+          <!-- Coluna 1 -->
+          <div class="col-lg-4 col-sm-12 text-start" style="color: #e2c7a4;">
+              <img src="../img/logo.navbar.png" class="mb-8" width="180px">
+              <h6><strong>O sabor de casa.</strong></h6>
+              <p class="small">© 2024 Iris Lanches. Todos os direitos reservados.</p>
+          </div>
+    
+          <!-- Coluna 2 -->
+          <div class="col-lg-4 col-sm-12 text-start my-lg-0 my-sm-4" style="color: #e2c7a4;">
+              <h5 class="mb-3"><strong>Visite-nos!</strong></h5>
+              <p>Rua Holanda, 456 - Coronel Fariciano<br>
+                  fbc@irislanches.com.br<br>
+                  (31) 3842-4488</p>
+              <p>Av. Pedro Linhares Gomes, 5.431 - Ipatinga<br>
+                  ipa@irislanches.com.br<br>
+                  (31) 3842-5267</p>
+          </div>
+    
+          <!-- Coluna 3 -->
+          <div class="col-lg-4 col-sm-12 text-start" style="color: #e2c7a4;">
+              <h5 class="mb-3"><strong>Horário de Funcionamento</strong></h5>
+              <div class="footer-item">
+                  <div><strong>De Segunda a Sexta</strong></div>
+                  <div class="footer-line"></div>
+                  <div>17:00-00:00</div>
+              </div>
+              <div class="footer-item">
+                  <div><strong>Sábados</strong></div>
+                  <div class="footer-line"></div>
+                  <div>10:00-22:00</div>
+              </div>
+              <div class="footer-item">
+                  <div><strong>Domingos</strong></div>
+                  <div class="footer-line"></div>
+                  <div>15:00-22:00</div>
+    </div>
+    
+    <a href="https://www.facebook.com/SenaiMG" class="btn text-danger fs-5"><i
+    class="bi bi-facebook"></i></a>
+    <a href="https://www.instagram.com/senaiminas" class="btn text-danger fs-5"><i
+    class="bi bi-instagram"></i></a>
+    <a href="https://x.com/senaimg" class="btn text-danger fs-5"><i class="bi bi-twitter"></i></a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    
+    </body>
+    </html>
+    
