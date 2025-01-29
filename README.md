@@ -5,7 +5,7 @@ Este projeto é um site de venda de hambúrgueres desenvolvido como parte de um 
 
 ![Captura de tela 2025-01-29 111533](https://github.com/user-attachments/assets/3e8e9970-6b83-4e88-868c-a0b7c94c7566)
 
-*VÍDEO DEMONSTRATIVO*
+**VÍDEO DEMONSTRATIVO:** 
 https://youtu.be/On2USWK6AWk
 
 ## Estruturação do site
