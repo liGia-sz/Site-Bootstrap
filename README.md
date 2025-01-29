@@ -3,7 +3,10 @@ Exercício de incentivo a exploração de comandos básicos para framework, vers
 ## Introdução
 Este projeto é um site de venda de hambúrgueres desenvolvido como parte de um exercício de exploração de ferramentas e frameworks. O principal objetivo foi criar um site funcional utilizando o Bootstrap para o layout e estilização, explorando suas facilidades e recursos prontos, além de aplicar boas práticas de versionamento com Git.
 
+![Captura de tela 2025-01-29 111533](https://github.com/user-attachments/assets/3e8e9970-6b83-4e88-868c-a0b7c94c7566)
 
+*VÍDEO DEMONSTRATIVO*
+https://youtu.be/On2USWK6AWk
 
 ## Estruturação do site
 
