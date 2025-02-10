@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORÇÕES | IRIS LANCHES</title>
+    <title>BEBIDAS | IRIS LANCHES</title>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -124,7 +124,7 @@ top: -7px;
     </header>
 
 <main>
-    <!-- Layout com a Sidebar e as porções -->
+    <!-- Layout com a Sidebar e as bebidas -->
     <div class="container-fluid">
         <div class="row">
     <!-- Sumário do Cardápio (Sidebar) -->
@@ -132,37 +132,38 @@ top: -7px;
         <div class="list-group m-1">
     <a href="../produtos.html" class="list-group-item list-group-item-action">Tudo</a>
     <a href="../produtos/hamburgueres.html" class="list-group-item list-group-item-action">Hambúrgueres</a>
-    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">Porções</a>
-    <a href="../produtos/bebidas.html" class="list-group-item list-group-item-action">Bebidas</a>
+    <a href="../produtos/porcoes.html" class="list-group-item list-group-item-action">Porções</a>
+    <a href="../produtos/bebidas.html" class="list-group-item list-group-item-action">B</a>
+    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">Bebidas</a>
     <a href="../produtos/sobremesas.html" class="list-group-item list-group-item-action">Sobremesas</a>
 </div>
 </div>
 
-<!-- PORÇÕES -->
+<!-- BEBIDAS -->
 <div class="col-md-9">
     <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
         <div class="row">
-            <!-- Batatas Crocantes -->
+            <!-- Caipirinha -->
             <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
                 <div class="card m-1 flex-fill">
-                    <img src="../img/Card-BCrocantes.png" class="card-img-top" alt="Batatas Crocantes">
+                    <img src="../img/Bebidas-Caipirinha.png" class="card-img-top" alt="Caipirinha">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Batatas Crocantes</h5>
-                        <p class="card-text">Porções de 200 a 500g. Antotar tamanho na descrição do pedido.</p>
-                        <h5>R$20,00</h5>
+                        <h5 class="card-title">Caipirinha</h5>
+                        <p class="card-text">Drink alcoólico e não alcoólico. Favor especificar na descrição do pedido.</p>
+                        <h5>R$12,00</h5>
                         <div class="mt-auto">
-                            <button class="btn btn-danger" onclick="adicionarSacola('Batatas Crocantes', 'R$20,00')">Sacola</button>
-                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalBCrocante">Saiba mais</button>
+                            <button class="btn btn-danger" onclick="adicionarSacola('Caipirinha', 'R$12,00')">Sacola</button>
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalCaipirinha">Saiba mais</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Modal para Batatas Crocantes -->
-            <div class="modal fade" id="infoModalBCrocante" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true" style="color: black;">
+            <!-- Modal para Caipirinha -->
+            <div class="modal fade" id="infoModalCaipirinha" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true" style="color: black;">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Batatas Crocantes</h5>
+                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Caipirinha</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -178,27 +179,27 @@ top: -7px;
                 </div>
             </div>
 
-            <!-- Torresmo Crocante -->
+            <!-- Chopp de Vinho -->
             <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
                 <div class="card m-1 flex-fill">
-                    <img src="../img/Card-Torresmo.png" class="card-img-top" alt="X-Frango">
+                    <img src="../img/Bebidas-Chopp de Vinho.png" class="card-img-top" alt="Chopp de Vinho">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Torresmo Crocante</h5>
-                        <p class="card-text">Acompanhado de fatias de limão e molho de pimenta artesanal.</p>
-                        <h5>R$15,75</h5>
+                        <h5 class="card-title">Chopp de Vinho</h5>
+                        <p class="card-text">De 100ml a 1L. favor especificar tamanho na descrição do pedido.</p>
+                        <h5>R$10,50</h5>
                         <div class="mt-auto">
-                            <button class="btn btn-danger" onclick="adicionarSacola('Torresmo Crocante', 'R$15,75')">Sacola</button>
-                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalTorresmo">Saiba mais</button>
+                            <button class="btn btn-danger" onclick="adicionarSacola('Chopp de Vinho', 'R$10,50')">Sacola</button>
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalCVinho">Saiba mais</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Modal para  Torresmo Crocante -->
-            <div class="modal fade" id="infoModalTorresmo" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true" style="color: black;">
+            <!-- Modal para Chopp de Vinho -->
+            <div class="modal fade" id="infoModalCVinho" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true" style="color: black;">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Torresmo Crocante</h5>
+                            <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Chopp de Vinho</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -213,27 +214,27 @@ top: -7px;
                     </div>
                 </div>
                 </div>
-                        <!--Mandioquinha Frita-->
+                        <!--Suco de Laranja-->
                         <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
                             <div class="card m-1 flex-fill">
-                                <img src="../img/Card-mandioca.png" class="card-img-top" alt="Mandioquinha Frita">
+                                <img src="../img/Bebidas-S.Laranja.png" class="card-img-top" alt="Suco de Laranja">
                                 <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Mandioquinha Frita</h5>
-                                    <p class="card-text">Servida com molho de alho ou maionese temperada.</p>
-                                    <h5>R$13,50</h5>
+                                    <h5 class="card-title">Suco de Laranja</h5>
+                                    <p class="card-text">500ml de Suco natural de frutas frescas feito na hora.</p>
+                                    <h5>R$12,00</h5>
                                     <div class="mt-auto">
-                                        <button class="btn btn-danger" onclick="adicionarSacola('Mandioquinha Frita', 'R$13,50')">Sacola</button>
-                                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalMandioca">Saiba mais</button>
+                                        <button class="btn btn-danger" onclick="adicionarSacola('Suco de Laranja', 'R$12,00')">Sacola</button>
+                                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalSLaranja">Saiba mais</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Modal para Mandioquinha Frita -->
-                        <div class="modal fade" id="infoModalMandioca" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true" style="color: black;">
+                        <!-- Modal para Suco de Laranja -->
+                        <div class="modal fade" id="infoModalSLaranja" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true" style="color: black;">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Mandioquinha Frita</h5>
+                                        <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Suco de Laranja</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
@@ -253,27 +254,27 @@ top: -7px;
                             <!-- Espaço Vazio -->
                         </div>
                         
-                    <!--Pão de Queijo Recheado-->
+                    <!--Suco de Caju-->
                     <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
                         <div class="card m-1 flex-fill">
-                            <img src="../img/Card-PãodeQueijo.png" class="card-img-top" alt="Pão de Queijo Recheado">
+                            <img src="../img/Bebidas-S.Caju.png" class="card-img-top" alt="Suco de Caju">
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Pão de Queijo Recheado</h5>
+                                <h5 class="card-title">Suco de Caju</h5>
                                 <p class="card-text">Recheios: requeijão, carne seca ou pernil desfiado.</p>
-                                    <h5>R$5,00</h5>
+                                    <h5>R$11,50</h5>
                                     <div class="mt-auto">
-                                    <button class="btn btn-danger" onclick="adicionarSacola('Pão de Queijo Recheado', 'R$5,00')">Sacola</button>
-                                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalPQR">Saiba mais</button>
+                                    <button class="btn btn-danger" onclick="adicionarSacola('Suco de Caju', 'R$11,50')">Sacola</button>
+                                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalSCaju">Saiba mais</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--Modal para Pão de Queijo Recheado-->
-                    <div class="modal fade" id="infoModalPQR" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true" style="color: black;">
+                    <!--Modal para Suco de Caju-->
+                    <div class="modal fade" id="infoModalSCaju" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true" style="color: black;">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Pão de Queijo Recheado</h5>
+                                    <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Suco de Caju</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -289,27 +290,27 @@ top: -7px;
                         </div>
                     </div>
 
-                    <!--Costelinha Suína com Molho Barbecue-->
+                    <!--Coca-cola-->
                     <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
                         <div class="card m-1 flex-fill">
-                            <img src="../img/Card-Costela-BBQ.png" class="card-img-top" alt="Mineirinho">
+                            <img src="../img/Bebidas-Coca.png" class="card-img-top" alt="Coca-cola">
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Costelinha Suína com Molho Barbecue</h5>
-                                <p class="card-text">Carne suculenta e bem temperada, acompanhada de seis molhos a escolha do cliente.</p>
-                                     <h5>R$28,00</h5>
+                                <h5 class="card-title">Coca-cola</h5>
+                                <p class="card-text">Temos todos os tamanhos. Especifique sua preferência na aba Detalhes ao final do pedido pedido.</p>
+                                     <h5>R$14,25</h5>
                                      <div class="mt-auto">
-                                    <button class="btn btn-danger" onclick="adicionarSacola('Costelinha Suína com Molho Barbecue', 'R$35,00')">Sacola</button>
-                                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalCostela">Saiba mais</button>
+                                    <button class="btn btn-danger" onclick="adicionarSacola('Coca-cola', 'R$14,25')">Sacola</button>
+                                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalCoca-cola">Saiba mais</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--Modal para Costelinha Suína com Molho Barbecue-->
-                    <div class="modal fade" id="infoModalCostela" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true" style="color: black;">
+                    <!--Modal para Coca-cola-->
+                    <div class="modal fade" id="infoModalCoca-cola" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true" style="color: black;">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Costelinha Suína com Molho Barbecue</h5>
+                                    <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais - Coca-cola</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -325,27 +326,27 @@ top: -7px;
                         </div>
                     </div>
 
-                    <!--Linguiça Acebolada-->
+                    <!-- Guaraná -->
                     <div class="col-xxl-4 col-xl-6 col-lg-6 col-12 d-flex">
                         <div class="card m-1 flex-fill">
-                            <img src="../img/Crad-LAcebolada.png" class="card-img-top" alt="Linguiça Acebolada">
+                            <img src="../img/Bebidas-Naná.png" class="card-img-top" alt="Linguiça Acebolada">
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Linguiça Acebolada</h5>
-                                <p class="card-text"> Feita com linguiça mineira e finalizada com cebolas douradas.</p>
-                                    <h5>R$26,00</h5>
+                                <h5 class="card-title">Guaraná</h5>
+                                <p class="card-text"> Temos todos os tamanhos. Especifique sua preferência na aba Detalhes ao final do pedido pedido.</p>
+                                    <h5>R$13,00</h5>
                                     <div class="mt-auto">
-                                    <button class="btn btn-danger" onclick="adicionarSacola('Linguiça Acebolada', 'R$26,00')">Sacola</button>
-                                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalLAcebolada">Saiba mais</button>
+                                    <button class="btn btn-danger" onclick="adicionarSacola('Guaraná', 'R$13,00')">Sacola</button>
+                                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#infoModalGuarana">Saiba mais</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--Modal para Linguiça Acebolada-->
-                    <div class="modal fade" id="infoModalLAcebolada" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true" style="color: black;">
+                    <!--Modal para Guaraná-->
+                    <div class="modal fade" id="infoModalGuarana" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true" style="color: black;">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais -  Linguiça Acebolada</h5>
+                                    <h5 class="modal-title" id="infoModalLabel">Informações Nutricionais -  Guaraná</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
