@@ -76,9 +76,6 @@
 </head>
 
 <body>
-    <!-- Toast de "Enviar Pedido" -->
-    
-
 <!--NAVBAR-->
 <header>
     <nav class="navbar navbar-expand-lg bg-navbar">
@@ -111,13 +108,13 @@
                         </a>
                         <ul class="dropdown-menu border-warning">
                             <li><a class="dropdown-item"
-                                    href="../produtos/hamburgueres.html"><strong>Hambúrgueres</strong></a></li>
+                                    href="produtos/hamburgueres.html"><strong>Hambúrgueres</strong></a></li>
                             <li><a class="dropdown-item"
-                                    href="../produtos/bebidas.html"><strong>Bebidas</strong></a></li>
+                                    href="produtos/bebidas.html"><strong>Bebidas</strong></a></li>
                             <li><a class="dropdown-item"
-                                    href="../produtos/porcoes.html"><strong>Porções</strong></a></li>
+                                    href="produtos/porcoes.html"><strong>Porções</strong></a></li>
                             <li><a class="dropdown-item"
-                                    href="../produtos/sobremesas.html"><strong>Sobremesas</strong></a></li>
+                                    href="produtos/sobremesas.html"><strong>Sobremesas</strong></a></li>
                             <li>
                                 <hr class="dropdown-divider border-success">
                             </li>
@@ -167,18 +164,19 @@
         <div class="col-8"> <!--Coluna coisa-->
             <!--FORM PARA FAZER O PEDIDO-->
             <div class="container mt-5">
-                <h1>Faça seu Pedido</h1>
+                <h1><strong>Faça seu Pedido</strong></h1>
                 <form>
                     <div class="col-2 mb-3">
                         <label for="quantidade" class="form-label">
-                            <p class="subtitulo">Quantidade</p>
+                            <p class="subtitulo"><strong>Quantidade</strong></p>
                         </label>
                         <input type="number" class="form-control" id="quantidade" value="1" min="1" required>
                     </div>
-                    <div class="row">
+                    <div class="row justify-content-between">
                         <!-- Checklist Para Molhos -->
-                        <div class="col-4">
-                            <p class="subtitulo">Escolha até 6 molhos:</p>
+                        <p class="subtitulo"><strong>Escolha até:</strong></p>
+                        <div class="col-4 ms-3 me-3">
+                            <p class="subtitulo"><strong>6 Molhos:</strong></p>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="ketchup">
                                 <label class="form-check-label" for="ketchup">Ketchup</label>
@@ -206,8 +204,8 @@
                         </div>
 
                         <!-- Checklist Para Carnes -->
-                        <div class="col-4">
-                            <p class="subtitulo">Escolha até 3 carnes:</p>
+                        <div class="col-4 ms-3 me-3">
+                            <p class="subtitulo"><strong>3 Carnes:</strong></p>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="tradicional">
                                 <label class="form-check-label" for="tradicional">Tradicional</label>
@@ -235,8 +233,8 @@
                         </div>
 
                         <!-- Checklist Para Adicionais -->
-                        <div class="col-4">
-                            <p class="subtitulo">Escolha até 3 adicionais:</p>
+                        <div class="col-4 ms-3 me-3">
+                            <p class="subtitulo"><strong>3 Adicionais:</strong></p>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="queijo">
                                 <label class="form-check-label" for="queijo">Queijo</label>
@@ -268,7 +266,7 @@
                     <!--Campo de texto para adicionar detalhes-->
                     <div class="mb-3">
                         <label for="detalhes" class="form-label">
-                            <p class="subtitulo">Mais alguma coisa?</p>
+                            <p class="subtitulo"><strong>Mais alguma coisa?</strong></p>
                         </label>
                         <textarea class="form-control" id="detalhes" rows="3"
                             placeholder="Escreva aqui qualquer detalhe adicional..."></textarea>
