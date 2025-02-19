@@ -123,6 +123,14 @@
         </div>
     </nav> 
 
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html" style="color: #e2c7a4;">Principal</a></li>
+            <li class="breadcrumb-item active" aria-current="page" style="color: #e2c7a4;">Sacola</li>
+        </ol>
+    </nav>
+
     <!-- Imagem da Logo -->
     <div class="text-center mt-4">
         <img src="img/logo.png" alt="Logo" style="height: 210px;">
@@ -168,6 +176,59 @@ function removerItem(index) {
 // Carregar a sacola ao carregar a página
 window.onload = carregarSacola;
 </script>
+
+<!--FOOTER-->
+<footer>
+    <div class="row border-bottom border-warning"></div>
+    <div class="container my-5">
+        <div class="row">
+            <!-- Coluna 1 -->
+            <div class="col-lg-4 col-sm-12 text-start">
+                <img src="img/logo.navbar.png" class="mb-8" width="180px">
+                <h6><strong>O sabor de casa.</strong></h6>
+                <p class="small">© 2025 Iris Lanches. Todos os direitos reservados.</p>
+            </div>
+
+            <!-- Coluna 2 -->
+            <div class="col-lg-4 col-sm-12 text-start my-lg-0 my-sm-4">
+                <h5 class="mb-3"><strong>Visite-nos!</strong></h5>
+                <p>Rua Holanda, 456 - Coronel Fariciano<br>
+                    fbc@irislanches.com.br<br>
+                    (31) 3842-4488</p>
+                <p>Av. Pedro Linhares Gomes, 5.431 - Ipatinga<br>
+                    ipa@irislanches.com.br<br>
+                    (31) 3842-5267</p>
+            </div>
+
+            <!-- Coluna 3 -->
+            <div class="col-lg-4 col-sm-12 text-start">
+                <h5 class="mb-3"><strong>Horário de Funcionamento</strong></h5>
+                <div class="footer-item">
+                    <div><strong>De Segunda a Sexta</strong></div>
+                    <div class="footer-line"></div>
+                    <div>17:00-00:00</div>
+                </div>
+                <div class="footer-item">
+                    <div><strong>Sábados</strong></div>
+                    <div class="footer-line"></div>
+                    <div>10:00-22:00</div>
+                </div>
+                <div class="footer-item">
+                    <div><strong>Domingos</strong></div>
+                    <div class="footer-line"></div>
+                    <div>15:00-22:00</div>
+                </div>
+
+                <a href="https://www.facebook.com/SenaiMG" class="btn text-danger fs-5"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/senaiminas" class="btn text-danger fs-5"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="https://x.com/senaimg" class="btn text-danger fs-5"><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
